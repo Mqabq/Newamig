@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Amigurumi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+        }
+        .thumbnail {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+            max-height: 100px;
+        }
+        .thumbnail:hover {
+            opacity: 1;
+        }
+        .active-thumbnail {
+            opacity: 1;
+        }
+        .text-amber {
+            color: #FFC107;
+        }
+        .product-info {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-amber">Amigurumi</h2>
+                <img id="mainImage" class="main-image" src="Cachorrinho.jpeg" alt="Imagem Principal">
+                <div class="d-flex overflow-auto mt-2">
+                    <img class="thumbnail mr-2" src="Cachorrinho.jpeg" alt="Cachorrinho" onclick="changeMainImage('Cachorrinho.jpeg', this)">
+                    <img class="thumbnail mr-2" src="alce.jpg" alt="Alce" onclick="changeMainImage('alce.jpg', this)">
+                    <img class="thumbnail mr-2" src="camponesa.jpeg" alt="Camponesa" onclick="changeMainImage('camponesa.jpeg', this)">
+                    <img class="thumbnail mr-2" src="elefantinha.jpeg" alt="Elefantinha" onclick="changeMainImage('elefantinha.jpeg', this)">
+                    <img class="thumbnail mr-2" src="emilia.jpg" alt="Emilia" onclick="changeMainImage('emilia.jpg', this)">
+                    <img class="thumbnail mr-2" src="amarelinha.jpg" alt="Amarelinha" onclick="changeMainImage('amarelinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="burrinha.jpg" alt="Burrinha" onclick="changeMainImage('burrinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="dinossauro.jpg" alt="Dinossauro" onclick="changeMainImage('dinossauro.jpg', this)">
+                    <img class="thumbnail mr-2" src="gata.jpg" alt="Gata" onclick="changeMainImage('gata.jpg', this)">
+                    <img class="thumbnail mr-2" src="girafinha.jpeg" alt="Girafinha" onclick="changeMainImage('girafinha.jpeg', this)">
+                    <img class="thumbnail mr-2" src="hipopotamuzinho.jpeg" alt="Hpopotamuzinho" onclick="changeMainImage('hipopotamuzinho.jpeg', this)">
+                    <img class="thumbnail mr-2" src="India da Floresta.jpeg" alt="India" onclick="changeMainImage('India da Floresta.jpeg', this)">
+                    <img class="thumbnail mr-2" src="japonesa.jpeg" alt="Japonesa" onclick="changeMainImage('japonesa.jpeg', this)">
+                    <img class="thumbnail mr-2" src="laranjinha.jpg" alt="Laranjinha" onclick="changeMainImage('laranjinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Leãozinho.jpeg" alt="Leãozinho" onclick="changeMainImage('Leãozinho.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Macaquinho.jpeg" alt="Macaquinho" onclick="changeMainImage('Macaquinho.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Menina.jpeg" alt="Menina" onclick="changeMainImage('Menina.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Mion.jpeg" alt="Mion" onclick="changeMainImage('Mion.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Orelhudo.jpg" alt="Orelhudo" onclick="changeMainImage('Orelhudo.jpg', this)">
+                    <img class="thumbnail mr-2" src="Os cats.jpeg" alt="Os cats" onclick="changeMainImage('Os cats.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Patinha.jpg" alt="Patinha" onclick="changeMainImage('Patinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Tartaruguinha.jpeg" alt="Tartaruguinha" onclick="changeMainImage('Tartaruguinha.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Ursinha.jpg" alt="Ursinha" onclick="changeMainImage('Ursinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Vovozinha.jpeg" alt="Vovozinha" onclick="changeMainImage('Vovozinha.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Yoda.jpeg" alt="Yoda" onclick="changeMainImage('Yoda.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Coelhinha.jpg" alt="Coelhinha" onclick="changeMainImage('Coelhinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Cabecinha.jpg" alt="Cabecinha" onclick="changeMainImage('Cabecinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Zebrinha.jpeg" alt="Zebrinha" onclick="changeMainImage('Zebrinha.jpeg', this)">
+                    <img class="thumbnail mr-2" src="Eliza.jpg" alt="Eliza" onclick="changeMainImage('Eliza.jpg', this)">
+                    <img class="thumbnail mr-2" src="Coraçãozinho.jpg" alt="Coraçãozinho" onclick="changeMainImage('Coraçãozinho.jpg', this)">
+                    <img class="thumbnail mr-2" src="Charme.jpg" alt="Charme" onclick="changeMainImage('Charme.jpg', this)">
+                    <img class="thumbnail mr-2" src="Pintinho.jpg" alt="Pintinho" onclick="changeMainImage('Pintinho.jpg', this)">
+                    <img class="thumbnail mr-2" src="Sapinha.jpg" alt="Sapinha" onclick="changeMainImage('Sapinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="Porquinha.jpg" alt="Porquinha" onclick="changeMainImage('Porquinha.jpg', this)">
+                    <img class="thumbnail mr-2" src="india.jpeg" alt="india" onclick="changeMainImage('india.jpeg', this)">
+
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-info">
+                    <h3>A Arte do Amigurumi</h3>
+                    <p class="text-muted" style="font-style: italic;">Promoção</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2>R$ 50</h2>
+                        <div>
+                            <span class="text-amber">&#9733;</span>
+                            <span class="text-amber">&#9733;</span>
+                            <span class="text-amber">&#9733;</span>
+                            <span class="text-amber">&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Descrição</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">A variedade dos personagens em Amigurumi.</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">WhatsApp: 41 99769-8580</div>
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-control mb-3" id="modelSelect">
+                            <option>Alce</option>
+                            <option>Amarelinha</option>
+                            <option>Burrinha</option>
+                            <option>Cabecinha</option>
+                            <option>Cachorrinho</option>
+                            <option>Camponesa</option>
+                            <option>Charme</option>
+                            <option>Coelhinha</option>
+                            <option>Coraçãozinho</option>
+                            <option>Cachorrinho</option>
+                            <option>Dinossauro</option>
+                            <option>Elefantinha</option>
+                            <option>Eliza</option>
+                            <option>Emilia</option>
+                            <option>Gata</option>
+                            <option>Girafinha</option>
+                            <option>Hipopotamuzinho</option>
+                            <option>India da Floresta</option>
+                            <option>India</option>
+                            <option>Japonesa</option>
+                            <option>Laranjinha</option>
+                            <option>Leãozinho</option>
+                            <option>Macaquinho</option>
+                            <option>Menina</option>
+                            <option>Mion</option>
+                            <option>Orelhudo</option>
+                            <option>Os Cats</option>
+                            <option>Patinha</option>
+                            <option>Pintinho</option>
+                            <option>Porquinha/option>
+                            <option>Sapinha</option>
+                            <option>Tartaruginha</option>
+                            <option>Ursinha</option>
+                            <option>Vovozinha</option>
+                            <option>Yoda</option>
+                            <option>Zebrinha</option>
+                        </select>
+                        <select class="form-control mb-3" id="quantitySelect">
+                            <option>1 unid.</option>
+                            <option>2 unid.</option>
+                            <option>3 unid.</option>
+                            <option>4 unid.</option>
+                            <option>5 unid.</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-light btn-block">Visualização ao lado dos modelos em carrossel</button>
+                    <button class="btn btn-warning btn-block">Clique na Aba contato para fazer seu pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function changeMainImage(src, thumbnail) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
+
+            // Remove a classe "active" das miniaturas anteriores
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(img => img.classList.remove('active-thumbnail'));
+
+            // Adiciona a classe "active" à miniatura clicada
+            thumbnail.classList.add('active-thumbnail');
+        }
+    </script>
+</body>
+</html>
